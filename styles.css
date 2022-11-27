@@ -5,16 +5,33 @@
 }
 
 body{
-	margin: 0;
-	color: white;
+	margin: 0 auto;
+	color: #d0dde3;
     background-color: #992929;
+	width: 1280px;
+	background-image: url("assets/scales.png");
+	background-repeat: repeat;
 }
 
 header, footer{
-	padding: 20px;
-	background-color: black;
-	color: #fff;
+	padding: 30px;
+	background-color: #203c4a;
+	color: #d0dde3;
+	font-size: x-large;
 	text-align: center;
+	width: 1280px;
+	margin: 0 auto;
+	border-radius: 30px;
+	box-shadow: -3px 3px 5px black;
+
+}
+
+main{
+	background-color:#203c4a;
+	border-radius: 30px;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+	box-shadow: -3px 3px 5px black;
 }
 
 nav {
@@ -32,29 +49,28 @@ nav ul {
 nav li {
     display: inline;
     list-style: none;
-    background-color: red;
+    background-color: #f7b950;
     padding: 20px;
-    border-radius: 4px;
+    border-radius: 50px;
+	box-shadow: -3px 3px 5px black;
 }
 
 nav a {
     display: inline-block;
     text-decoration: none;
     font-weight: bold;
+	font-size: large;
     padding: 0px;
     text-align: center;
+	color: black ;
 }
 
 nav li:hover { 
-        box-shadow: -3px 3px 5px black; ;
+        box-shadow: -3px 3px 5px #e89630;
 }
 
 a { 
-    color:white ;
-}
-
-main{
-	padding: 20px;
+    color:#d0dde3;
 }
 
 #contactmain{
@@ -62,23 +78,31 @@ main{
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
+	border-radius: 30px;
+	padding: 30px;
+	margin-bottom: 30px;
 }
 
 h2, h3{
 	text-align: center;
+	text-decoration-line: underline;
+	font-size: xx-large;
 }
 
 p{
 	max-width: 60ch;
 	margin: 16px auto;
+	text-align: center;
+	font-size: large;
 }
 form{
 	width: 350px;
 	margin: 016px auto;
 	background-color: #992929;
 	padding: 16px;
-	color: white;
-	border-radius: 4px;
+	color: #d0dde3;
+	border-radius: 10px;
+	box-shadow: -3px 3px 5px black;
 }
 
 input, label, select, textarea{
@@ -95,14 +119,15 @@ input, select, textarea{
 	padding: 10px;
 	font-size: 1rem;
 	margin-bottom: 24px;
-	border-radius: 4px;
+	border-radius: 10px;
 	border: 1px inset black;
+	background-color: #d0dde3;
 }
 
 fieldset{
 	margin-bottom: 24px;
-	border-radius: 4px;
-	border-color: #363432;
+	border-radius: 10px;
+	border-color: black;
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: 8px 0;
@@ -117,28 +142,28 @@ fieldset label{
 }
 
 input[type=submit]{
-	background-color: red;
+	background-color: #f7b950;
 	border: none;
-	color: white;
+	color: black;
 	font-weight: bold;
 	box-shadow: -6px 6px 10px black;
 }
 
 input:invalid, select:invalid, textarea:invalid{
-	border: 4px solid red;
+	border: 4px solid #e89630;
 }
 
 input:focus, select:focus, textarea:focus{
-	outline: 3px solid red;
+	outline: 3px solid #e89630;
 }
 
 
 input[type=submit]:focus{
-	outline: 3px solid red;
+	outline: 3px solid #e89630;
 }
 
 input[type=submit]:hover{
-	box-shadow: -3px 3px 5px black;
+	box-shadow: -3px 3px 5px #e89630;
 }
 
 input[type=radio] + label {
@@ -166,15 +191,15 @@ input[type=radio] + label::before {
    	width: 22px;
    	text-align: center;
    	margin-right: 16px;
-   	border: 2px solid white;
-   	background-color: white;
+   	border: 2px solid #d0dde3;
+   	background-color: #d0dde3;
 	padding-bottom: 2px;
 }
 
 input[type=radio]:checked + label::before {
    	content: "\2022";
-   	color: #fff;
-   	background: red;
+   	color: #d0dde3;
+   	background: #e89630;
 }
 
 input[type=radio]:focus{
@@ -182,31 +207,31 @@ input[type=radio]:focus{
 }
 
 input[type=radio]:focus + label::before {
-   	box-shadow: 0 0 0 2px red;
-}
-
-#question{
-    text-align: center;
+   	box-shadow: 0 0 0 2px #e89630;
 }
 
 #heroimg{
     display: grid;
-    width: 1500px;
+    width: 1280px;
     height: auto;
     margin: 0 auto;
+	border-radius: 30px;
 }
 
 #leftimg, #rightimg {
     width: 600px;
     height: auto;
+	margin: 0 auto;
+	border-radius: 30px;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 0px;
-    width: 1500px;
+    width: 1280px;
     margin: 0 auto;
     padding-top: 3em;
     text-align: center;
+	border-radius: 30px;
 }
